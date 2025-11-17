@@ -7,10 +7,10 @@ friends.forEach(friend => {
 
 
 // map
-const nums = [1, 2, 3]
-const squared = nums.map(num => num * num)
+// const nums = [1, 2, 3]
+// const squared = nums.map(num => num * num)
 
-console.log(squared)
+// console.log(squared)
 
 const studentsArray = ['Anna', 'Nathan', 'Laura', 'Cara', 'Shubdeep', 'Jamelyn', 'Tom']
 
@@ -28,3 +28,13 @@ const awesomeInstructors = instructors.map(teach => {
 })
 
 console.log(awesomeInstructors)
+
+
+// reduce
+const nums = [25, 5, 100, 10]
+
+let sum = nums.reduce((prev, num) => {
+  return prev + num
+}, 0)
+
+console.log(sum)
