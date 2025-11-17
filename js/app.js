@@ -38,3 +38,17 @@ let sum = nums.reduce((prev, num) => {
 }, 0)
 
 console.log(sum)
+
+let votes = ['Yes', 'No', 'Yes', 'Yes', 'No']
+
+let tally = votes.reduce((prev, vote) => {
+  if (prev[vote]) {
+    prev[vote] += 1
+  } else {
+    prev[vote] = 1
+  }
+
+  return prev
+}, {})
+
+console.log(tally)
