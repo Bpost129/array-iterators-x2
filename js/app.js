@@ -19,4 +19,12 @@ const students = studentsArray.map((student, idx) => {
   return transformedStudent
 })
 
-console.log(students)
+// console.log(students)
+
+const instructors = ["Beryl", "Ian", "Hunter", "Joe", "Jurgen", "Ben", "David"]
+
+const awesomeInstructors = instructors.map(teach => {
+  return teach + ' is awesome'
+})
+
+console.log(awesomeInstructors)
