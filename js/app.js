@@ -42,12 +42,15 @@ console.log(sum)
 let votes = ['Yes', 'No', 'Yes', 'Yes', 'No']
 
 let tally = votes.reduce((prev, vote) => {
-  if (prev[vote]) {
-    prev[vote] += 1
-  } else {
-    prev[vote] = 1
-  }
+  // if (prev[vote]) {
+  //   prev[vote] += 1
+  // } else {
+  //   prev[vote] = 1
+  // }
 
+  // return prev
+
+  prev[vote] = prev[vote] ? prev[vote] + 1 : 1
   return prev
 }, {})
 
