@@ -31,13 +31,13 @@ console.log(awesomeInstructors)
 
 
 // reduce
-const nums = [25, 5, 100, 10]
+// const nums = [25, 5, 100, 10]
 
-let sum = nums.reduce((prev, num) => {
-  return prev + num
-}, 0)
+// let sum = nums.reduce((prev, num) => {
+//   return prev + num
+// }, 0)
 
-console.log(sum)
+// console.log(sum)
 
 let votes = ['Yes', 'No', 'Yes', 'Yes', 'No']
 
@@ -55,3 +55,23 @@ let tally = votes.reduce((prev, vote) => {
 }, {})
 
 console.log(tally)
+
+
+// filter
+const nums = [100, 2, 5, 42, 99]
+
+const numsOver50 = nums.filter(num => num > 50)
+
+console.log(numsOver50)
+
+const arr = [true, false, true, false, false, true, false]
+
+const filteredArr = arr.filter(el => el)
+
+console.log(filteredArr) // [true, true, true]
+
+const arr2 = [true, false, 0, 'string', '', null, undefined, 42]
+
+const truthyArr = arr2.filter(el => el)
+
+console.log(truthyArr)
