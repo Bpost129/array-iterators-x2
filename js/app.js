@@ -75,3 +75,9 @@ const arr2 = [true, false, 0, 'string', '', null, undefined, 42]
 const truthyArr = arr2.filter(el => el)
 
 console.log(truthyArr)
+
+const people = ["jerks", "nice people", "jerks", "nice people", "nice people"]
+
+const notJerks = people.filter(per => per != 'jerks')
+
+console.log(notJerks)
