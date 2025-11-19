@@ -101,6 +101,14 @@ const missingCar = cars.find(car => car.color === 'black')
 
 const oldishCar = cars.find(car => car.year < 2014)
 
-console.log(oldishCar)
+// console.log(oldishCar)
 
 
+// findIndex
+const firstWhiteCarIdx = cars.findIndex(car => car.color === 'white')
+
+// console.log(firstWhiteCarIdx)
+
+const missingCarIdx = cars.findIndex(car => car.color === 'black')
+
+// console.log(missingCarIdx)
