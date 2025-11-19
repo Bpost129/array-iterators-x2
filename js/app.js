@@ -112,3 +112,15 @@ const firstWhiteCarIdx = cars.findIndex(car => car.color === 'white')
 const missingCarIdx = cars.findIndex(car => car.color === 'black')
 
 // console.log(missingCarIdx)
+
+
+// some
+const hasFord = cars.some(car => car.make === 'Ford')
+
+console.log(hasFord)
+
+const thingsInMyRoom = ["evil monkey", "bed", "lamp", "three tacos"]
+
+const isThereAnEvilMonkeyInMyRoom = thingsInMyRoom.some(thing => thing === 'evil monkey')
+
+console.log(isThereAnEvilMonkeyInMyRoom)
