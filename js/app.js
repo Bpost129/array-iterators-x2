@@ -124,3 +124,13 @@ const thingsInMyRoom = ["evil monkey", "bed", "lamp", "three tacos"]
 const isThereAnEvilMonkeyInMyRoom = thingsInMyRoom.some(thing => thing === 'evil monkey')
 
 console.log(isThereAnEvilMonkeyInMyRoom)
+
+
+// every
+const everyCarIsBlue = cars.every(car => car.color === 'blue')
+
+console.log(everyCarIsBlue)
+
+const everythingIsEvilMonkey = thingsInMyRoom.every(thing => thing === 'evil monkey')
+
+console.log(everythingIsEvilMonkey)
