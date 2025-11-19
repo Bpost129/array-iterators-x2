@@ -27,7 +27,7 @@ const awesomeInstructors = instructors.map(teach => {
   return teach + ' is awesome'
 })
 
-console.log(awesomeInstructors)
+// console.log(awesomeInstructors)
 
 
 // reduce
@@ -54,7 +54,7 @@ let tally = votes.reduce((prev, vote) => {
   return prev
 }, {})
 
-console.log(tally)
+// console.log(tally)
 
 
 // filter
@@ -62,22 +62,45 @@ const nums = [100, 2, 5, 42, 99]
 
 const numsOver50 = nums.filter(num => num > 50)
 
-console.log(numsOver50)
+// console.log(numsOver50)
 
 const arr = [true, false, true, false, false, true, false]
 
 const filteredArr = arr.filter(el => el)
 
-console.log(filteredArr) // [true, true, true]
+// console.log(filteredArr) // [true, true, true]
 
 const arr2 = [true, false, 0, 'string', '', null, undefined, 42]
 
 const truthyArr = arr2.filter(el => el)
 
-console.log(truthyArr)
+// console.log(truthyArr)
 
 const people = ["jerks", "nice people", "jerks", "nice people", "nice people"]
 
 const notJerks = people.filter(per => per != 'jerks')
 
-console.log(notJerks)
+// console.log(notJerks)
+
+
+// find
+const cars = [
+  {color: 'red', make: 'BMW', year: 2001},
+  {color: 'white', make: 'Toyota', year: 2013},
+  {color: 'blue', make: 'Ford', year: 2014},
+  {color: 'white', make: 'Tesla', year: 2016}
+]
+
+const firstWhiteCar = cars.find(car => car.color === 'white')
+
+// console.log(firstWhiteCar)
+
+const missingCar = cars.find(car => car.color === 'black')
+
+// console.log(missingCar)
+
+const oldishCar = cars.find(car => car.year < 2014)
+
+console.log(oldishCar)
+
+
